@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>MIST Task 1</title>
+   <style>
+      html, body { height: 100%; margin: 0; }
+      body {
+         display: flex;
+         flex-direction: column; 
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+         background-color: aqua;
+         overflow: hidden;
+         position: relative;
+      }
+
+      h1, h2 {
+         border: 3px solid #3498db;
+         padding: 10px;
+         border-radius: 8px;
+         text-align: center;
+      }
+      h1 {
+         margin: 0;
+         font-weight: 600;
+         font-size: clamp(1.25rem, 4vw, 2rem);
+         font-family: cursive;
+         text-shadow:5px 5px 5px grey;
+      }
+      h2 {
+         margin: 10px 0 0 0;
+      }
+
+      img {
+         margin-top: 20px;
+         max-width: 300px; 
+         height: auto;
+         border-radius: 10px; 
+      }
+
+      /* Animation for Welcome text */
+      .welcome {
+         position: absolute;
+         top: 20px;
+         left: 100%; /* start offscreen to the right */
+         font-size: 1.8rem;
+         font-weight: bold;
+         color: darkblue;
+         white-space: nowrap;
+         animation: slideText 10s linear infinite;
+      }
+
+      @keyframes slideText {
+         100% { left: 100%; }   /* start offscreen right */
+         0% { left: -100%; } /* move offscreen left */
+      }
+   </style>
+</head>
+<body>
+   <h1>MIST Task Phase</h1>
+   <h2>This is the first task for MIST</h2>
+   <div class="welcome">Welcome to Smiley's First Website</div>
+</body>
+</html>
